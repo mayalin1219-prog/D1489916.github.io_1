@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻花樹下的告白</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 首頁 -->
+        <div id="home-screen" class="screen active">
+            <h1 class="title">櫻花樹下的告白</h1>
+            <p class="intro">高中新學期的開始，你因為睡過頭而在走廊上狂奔，沒想到這一撞，竟意外撞出了不一樣的青春篇章...<br><br>準備好迎接你的校園戀愛故事了嗎？</p>
+            <button id="start-btn" class="btn primary-btn">開始故事</button>
+        </div>
+
+        <!-- 故事進度頁面 -->
+        <div id="story-screen" class="screen">
+            <div class="story-card">
+                <div id="story-text" class="story-text"></div>
+            </div>
+            <div id="choices-container" class="choices-container">
+                <!-- 選項按鈕將由 JS 動態生成 -->
+            </div>
+        </div>
+
+        <!-- 結局頁面 -->
+        <div id="ending-screen" class="screen">
+            <div class="ending-card">
+                <h2 class="ending-label">－ 結局 －</h2>
+                <h1 id="ending-title" class="ending-title"></h1>
+                <p id="ending-desc" class="ending-desc"></p>
+                <div class="canvas-container">
+                    <canvas id="sakura-canvas"></canvas>
+                </div>
+                <button id="restart-btn" class="btn primary-btn">重新開始故事</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
