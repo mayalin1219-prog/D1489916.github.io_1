@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘運勢占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ 神秘運勢占卜 ✨</h1>
+            <p>點擊下方按鈕，揭曉你今日的專屬運勢！</p>
+        </header>
+        
+        <main>
+            <!-- 占卜按鈕區塊 -->
+            <div id="fortune-container" class="active">
+                <button id="draw-btn" class="mystic-btn">抽取命運之牌 🔮</button>
+            </div>
+            
+            <!-- 結果顯示區塊 -->
+            <div id="result-container" class="hidden">
+                <div class="card">
+                    <h2 id="result-title"></h2>
+                    <div class="result-details">
+                        <p><strong>💼 工作：</strong><span id="result-work"></span></p>
+                        <p><strong>📚 學業：</strong><span id="result-study"></span></p>
+                        <p><strong>❤️ 愛情：</strong><span id="result-love"></span></p>
+                        <p><strong>💰 金錢：</strong><span id="result-money"></span></p>
+                    </div>
+                    <p class="quote" id="result-quote"></p>
+                </div>
+                <button id="retry-btn" class="mystic-btn outline">再占卜一次 🔄</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
